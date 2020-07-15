@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_feature1"
+    app:startDestination="@id/fragmentF1Fr1">
+
+    <fragment
+        android:id="@+id/fragmentF1Fr1"
+        android:name="ir.vasl.navtest.view.feature1.fragments.FragmentF1Fr1"
+        android:label="fragment_f1_fr1"
+        tools:layout="@layout/fragment_f1_fr1">
+        <action
+            android:id="@+id/action_fragmentF1Fr1_to_fragmentF1Fr2"
+            app:destination="@id/fragmentF1Fr2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentF1Fr2"
+        android:name="ir.vasl.navtest.view.feature1.fragments.FragmentF1Fr2"
+        android:label="fragment_f1_fr2"
+        tools:layout="@layout/fragment_f1_fr2" />
+
+</navigation>
