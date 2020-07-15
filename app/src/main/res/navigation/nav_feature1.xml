@@ -19,6 +19,12 @@
         android:id="@+id/fragmentF1Fr2"
         android:name="ir.vasl.navtest.view.feature1.fragments.FragmentF1Fr2"
         android:label="fragment_f1_fr2"
-        tools:layout="@layout/fragment_f1_fr2" />
+        tools:layout="@layout/fragment_f1_fr2">
+        <argument
+            android:name="arg_temp"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
 
 </navigation>

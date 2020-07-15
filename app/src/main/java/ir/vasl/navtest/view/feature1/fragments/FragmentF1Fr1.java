@@ -12,9 +12,17 @@ public class FragmentF1Fr1 extends BaseFragment {
 
     @OnClick(R.id.button_go_to_fragment_2)
     public void OnGoToFragment2Clicked() {
-        Navigation
-                .findNavController(this.getView())
-                .navigate(R.id.action_fragmentF1Fr1_to_fragmentF1Fr2);
+
+        // temp value
+        String temp_value = "here we go ;)";
+
+        // get action use safeArg plugin with value
+        FragmentF1Fr1Directions.ActionFragmentF1Fr1ToFragmentF1Fr2 action = FragmentF1Fr1Directions.actionFragmentF1Fr1ToFragmentF1Fr2();
+        action.setArgTemp(temp_value);
+
+        // navigate to destination
+        Navigation.findNavController(this.getView()).navigate(action);
+
     }
 
     public FragmentF1Fr1() {
